@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>3d model</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="generator" content="Geany 1.37.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Splash&display=swap"
+        rel="stylesheet">
+    <!-- ion icons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- style sheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+    <!--  REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!--  OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <!--     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> -->
+
+    <!--  OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <!--     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> -->
+
+    <!--  OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <!--
+   <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+	-->
+</head>
+
+<body>
+
+    <!-- 3D content  -->
+
+    <model-viewer src="./tesla_roadster_2020/scene.gltf" alt="A 3D model of a car" class="model3d" shadow-intensity="1"
+        camera-controls auto-rotate ar>
+    </model-viewer>
+
+    <!-- navbar -->
+
+    <div class="nav">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tesla_Motors_Logo.svg/2560px-Tesla_Motors_Logo.svg.png"
+                alt="Tesla logo">
+        </div>
+        <div class="centerNav">
+            <a href="#" class="btnActive">Roadster</a>
+            <a href="#">Modal S</a>
+            <a href="#">Modal Y</a>
+            <a href="#">Modal 3</a>
+            <a href="#">Modal X</a>
+        </div>
+        <div class="rNav">
+            <a href="#">Shop</a>
+            <a href="#">Account</a>
+            <a href="#">Menu</a>
+        </div>
+    </div>
+
+    <!-- hero banner -->
+
+    <div class="heroBanner">
+        <div class="headerText">
+            Roadster
+        </div>
+        <div class="infoText">​The quickest car in the world, with record-setting acceleration, range and performance.
+            As an all-electric supercar, Roadster maximizes the potential of aerodynamic engineering—with record-setting
+            performance
+            and efficiency.
+        </div>
+        <div class="stats">
+            <li>
+                <div class="top">
+                    <i class="ion-speedometer"></i>
+                    <p>1.9<small>s</small></p>
+                </div>
+                <p>0-60 mph</p>
+            </li>
+            <li>
+                <div class="top">
+                    <p>+ 250<small>mph</small></p>
+                </div>
+                <p>Top Speed</p>
+            </li>
+            <li>
+                <div class="top">
+                    <i></i>
+                    <p>620<small>mi</small></p>
+                </div>
+                <p>Range</p>
+            </li>
+        </div>
+        <button class="actionBtn">
+            Reserve Now
+        </button>
+    </div>
+
+
+    <!-- scripts to support all browsers! -->
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+    </script>
+
+</body>
+
+</html>
